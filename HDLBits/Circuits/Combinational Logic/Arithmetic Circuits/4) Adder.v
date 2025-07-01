@@ -1,4 +1,11 @@
-/*
+module top_module (
+    input [3:0] x,
+    input [3:0] y, 
+    output [4:0] sum);
+    assign sum=x+y;
+endmodule
+
+/* Alternative method
 module fadd(input a,b,cin,output sum,cout);
     assign sum=a^b^cin;
     assign cout=(a&b)|(b&cin)|(a&cin);
